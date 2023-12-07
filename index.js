@@ -6,7 +6,6 @@ const corsOptions = {
     credentials: true,
 };
 app.use(cors(corsOptions));
-const port = 5000
 const mongoDB = require("./db")
 mongoDB();
 
@@ -19,5 +18,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${process.env.port||5000}`)
 })

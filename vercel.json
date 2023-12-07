@@ -12,5 +12,11 @@
             "src": "/(.*)",
             "dest": "/index.js"
         }
-    ]
+    ],
+    
+    
+        "headers": {
+          "Access-Control-Allow-Origin": "https://gofoodapp-5yo5.onrender.com"
+        }
+      
 }
