@@ -1,7 +1,11 @@
 const express = require('express')
 const cors=require("cors");
 const app = express()
-app.use(cors());
+const corsOptions = {
+    origin: "https://gofoodapp-5yo5.onrender.com",
+    credentials: true,
+};
+app.use(cors(corsOptions));
 const port = 5000
 const mongoDB = require("./db")
 mongoDB();
