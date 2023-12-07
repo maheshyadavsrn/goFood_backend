@@ -1,11 +1,11 @@
 const express = require('express')
 const cors=require("cors");
 const app = express()
-const corsOptions = {
-    origin: "https://gofoodapp-5yo5.onrender.com",
-    credentials: true,
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: "https://gofoodapp-5yo5.onrender.com",
+//     credentials: true,
+// };
+app.use(cors());
 const mongoDB = require("./db")
 mongoDB();
 
