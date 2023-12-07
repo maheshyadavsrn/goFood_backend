@@ -1,6 +1,7 @@
 const express = require('express')
 const cors=require("cors");
 const app = express()
+const port=5000;
 // const corsOptions = {
 //     origin: "https://gofoodapp-5yo5.onrender.com",
 //     credentials: true,
@@ -18,5 +19,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port 5000`)
+    console.log(`Example app listening on port  ${port}`)
 })
